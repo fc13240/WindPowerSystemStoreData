@@ -1,0 +1,1841 @@
+{
+  "plc": [
+    {
+      "name": "alarm",
+      "hasHead": true,
+      "headSize": 4,
+      "bodyUnitSize": 16,
+      "timestampStartIndex": 4,
+      "timestampSize": 12
+    },
+    {
+      "name": "trip",
+      "hasHead": true,
+      "headSize": 4,
+      "bodyUnitSize": 96,
+      "timestampStartIndex": 84,
+      "timestampSize": 12
+    },
+    {
+      "name": "state",
+      "hasHead": true,
+      "headSize": 4,
+      "bodyUnitSize": 20,
+      "timestampStartIndex": 8,
+      "timestampSize": 12
+    }
+  ],
+  "realTime": [
+    {
+      "name": "WT2000D110",
+      "pieces": 10,
+      "measurements": [
+        {
+          "name": "UC_ResetAlarms",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "UC_ScadaReset",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "UC_ScadaStop",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "UC_ScadaEnableTowerDoorAlarms",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ScadaToggleBit",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ScadaActivePowerControlFlag",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ScadaReactivePowerControlFlag",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ScadaTimeSyncFlag",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsPersonnelLevelOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsCableTwistOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsWatchdogOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsYawLevelOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsRotorSpeedOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsPchSsdOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsControllerActiveOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsTurbineLevelOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsPowerOnReset",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SsResetButtonOrPowerOnReset",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleCabinetEStopPressed",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxEStopPressed",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SafetyChainFuse5",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SafetyChainFuse6",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SafetyChainFuse",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_UpsError",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacellePositionCw",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CableTwistLimitOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CableTwistCwNoWarning",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CableTwistCcwNoWarning",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CableTwistLimitSwitchesBypassed",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RlpInchingRequest",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RlpMoveCw",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RlpMoveCcw",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_PitchPowerSupplyOverVoltageProtectionOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_Nacelle400VAcSwitchOn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleHeater1CircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleHeater2CircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleServiceSwitch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_ControlCabinetHeatingCircuitBreakers",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CabinetHeatingsContactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleEncoderPulsOfA",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleEncoderPulsOfB",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleFanFuse002",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleFireFgt",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_MainsSupplyFuse",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_230VSupplyCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CabineHumidity1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CabineHumidity2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_24VFuse001Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_24VFuse002Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_24VFuse003Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_24VSupplyOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CabinetHeatingCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CabinetFansCircuitBreakers",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HubManualModeOn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HubPowerSupplyCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackPressureBelowHigh",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackPressureAboveLow",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicOilLevelNotError",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicOilLevelNotWarning",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackFilterNotBlocked1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackFilterNotBlocked2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackOilTempOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackBrakeMotorProtSwitchOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPowerPackContactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BrakePadWearNotWorn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BrakePadWearNotSevere",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HssBrakeApplied",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawBearingLubricationOK",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawManualOperationOn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawConverterCircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawBrakeCircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_MainBearingLubricationCircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_MainBearingLubricationOK",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilCoolingMotorProtSwitch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxFansMotorProtSwitch1Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxHeatingCircuitBreakers",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxCoolingFan1Contactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilFilterPressureOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilCoolingPumpContactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxHeatingContactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilLevelOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorLubricationError",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFan1Contactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFan2Contactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFan3Contactor",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFanFuse1Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFanFuse2Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorFanFuse3Ok",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorEarthingBrushNotWorn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RotorLockFullyInserted",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RotorLockFullyReleased",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorOverVoltageProtectionOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_PitchManualBypassLimitSwitch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_FTAnemometer24VCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_ScadaResetSaftyChain",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_ResetPch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SsTurbineNoTrip",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_ControllerWatchdog",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_NacelleCabinetFans",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_CabinetHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_MainBearingLubrication",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_YawBearingLubrication",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_YawApplyBrakeValveY3",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_YawApplyBrakeValveY4",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_YawApplyBrakeValveY5",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_HssBrakeImmediate",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_HydraulicPowerPackPump",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_HydraulicPowerPackOilHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GearboxFansAndPumpHeaters",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GearboxOilHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GearboxCoolingFan1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GearboxOilPump",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorFan1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorFan2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorFan3",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorFan3Heater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_AutomaticModeLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_ServiceModeLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_ErrorLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_AllowedInHubLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_NotAllowedInHubLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SafetyChainTrippedLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_GeneratorSlipRingHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_NacelleFan1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GridMonOverPower",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseEStopPressed",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBasePcsFault",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBase400VAcSwitchOn",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseHeatingCircuitBreaker",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_UpsIsBuffering",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_UpsReplaceBattery",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseHumidtyHigh",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBase24VInputCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseManualKeySwitch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseRemoteKeySwitch",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseOffKeySwitchActive",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput3",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput4",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput5",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput6",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput7",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput8",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput9",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput10",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput11",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput12",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput13",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput14",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput15",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerDigitalInput16",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseHeatExchangerCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseCoolingPumpCircuitBreakerOk",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_CoolingSystemWaterPressureLow",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerDoor1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerDoor2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_WaterCoolingPcsWaterPump",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBasePcsHeater",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBasePersonnelLevelLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseSafetyChainLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseAutomaticModeLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseErrorLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseServiceModeLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseAllowedInHubLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseNotAllowedInHubLamp",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_BoxTransformerDigitalOutput1",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_BoxTransformerDigitalOutput2",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_BoxTransformerDigitalOutput3",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_BoxTransformerDigitalOutput4",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_TowerBaseAirCoolingFan",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchAllBladesAtFeather",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivSafetyFeedback",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchEfc",
+          "dataType": "boolean",
+          "dataLength": 4
+        },
+        {
+          "name": "P_ControllerSoftwareVersion",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_PitchType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_PcsType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_YawDriveType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_HydraulicType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_GeneratorType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_GearBoxType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_WindSensorType",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_Ncc310Temperature1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_Ncc310Temperature2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleTemperature1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacelleTemperature2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_OutsideAirTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_NacellePosition",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HydraulicPpAccumPrechargePressure",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_HssHydraulicBrakePressure",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawHydraulicBrakePressure",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxSumpOilTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilTemperatureInlet",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxHssBearingTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxLssBearingTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GearboxOilPressure",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingUTemperature1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingVTemperature1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingWTemperature1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingUTemperature2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingVTemperature2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorWindingWTemperature2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorSlipRingTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorBearingDrivetrainTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_GeneratorBearingNonDrivetrainTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_RotorSpeed",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_WindSpeed1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawError1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_WindSpeed2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawError2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBasePcsCoolingWaterTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseEnvironmentTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseCabinetTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseTransformerTempHV1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseTransformerTempHV2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseTransformerTempHV3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_TowerBaseTransformerTempHV4",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerAnalogInput1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerAnalogInput2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerAnalogInput3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_BoxTransformerAnalogInput4",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivSoftwareVersion1",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivSoftwareVersion2",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivSoftwareVersion3",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPosition1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPosition2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPosition3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchRate1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchRate2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchRate3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivMotorCurrentBlade1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivMotorCurrentBlade2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivMotorCurrentBlade3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivVoltage1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivVoltage2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPitchPrivVoltage3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchPositionDemand1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchPositionDemand2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchPositionDemand3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchRateDemand1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchRateDemand2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPitchRateDemand3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsDcVoltage",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsMainsVoltage",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsMainsCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsReactivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsActivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsMeasuredGeneratorSpeed",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsMeasuredElectricalTorque",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridFrequency",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGroundCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridVoltageAB",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridVoltageBC",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridVoltageCA",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridCurrentA",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridCurrentB",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGridCurrentC",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsLineSideCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsGeneratorSideCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsStatorCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsIGBTTemp1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsIGBTTemp2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubPcsIGBTTemp3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPcsTorqueDemand",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CO_SubPcsReactivePowerDemand",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibNacelleForeAftAcceleration",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibNacelleSideSideAcceleration",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibGearboxAcceleration",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand4",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand5",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand6",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand7",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand8",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand9",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand10",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand11",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubVibPrivBand12",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprVoltageL1L2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprVoltageL2L3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprVoltageL3L1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprCurrentL1",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprCurrentL2",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprCurrentL3",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprRealPower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprReactivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprPrivPowerFactor",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprFrequency",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_SubIprEnergyReal",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_AC400VActivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_AC400VReactivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_AC400VApparentPower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_AC400VConsume",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawActivePower",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawModuleTemperature",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawGeneratorCurrent",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawMotorVoltage",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "CI_YawDCVoltage",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "S_HighestActiveAlarm",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_HighestActiveAlarmId",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ActiveAlarmCategory",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "S_UtcTimeSeconds",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "S_ControllerState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_SubPitchPrivState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_YawState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_YawDriveState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_YawBrakeState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "S_SubPcsPrivState",
+          "dataType": "dword",
+          "dataLength": 4
+        },
+        {
+          "name": "D_TShortAverageWindSpeed",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "D_TMedAverageWindSpeed",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "D_TLongAverageWindSpeed",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "D_YawRate",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID1",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID2",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID3",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID4",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID5",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID6",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID7",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID8",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmID9",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerAlarmIDA",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID1",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID2",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID3",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID4",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID5",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID6",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID7",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID8",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningID9",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_ControllerWarningIDA",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID1",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID2",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID3",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID4",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID5",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID6",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID7",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID8",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmID9",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPitchPrivAlarmIDA",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID1",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID2",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID3",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID4",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID5",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID6",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID7",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID8",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmID9",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmIDA",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmIDB",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "D_SubPcsPrivAlarmIDC",
+          "dataType": "short",
+          "dataLength": 4
+        },
+        {
+          "name": "UC_ScadaActivePowerLimit",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "UC_ScadaReactivePowerLimit",
+          "dataType": "float",
+          "dataLength": 4
+        },
+        {
+          "name": "S_UtcTimeSecondsSync",
+          "dataType": "long",
+          "dataLength": 4
+        },
+        {
+          "name": "P_ActivePowerLimit",
+          "dataType": "float",
+          "dataLength": 4
+        }
+      ]
+    }
+  ]
+}
